@@ -1,0 +1,186 @@
+
+/*Definiendo las variales de color*/
+:root{
+    --blanco:#FFFFFF;
+    --oscuro:#212121;
+    --primario:#ffC107;
+    --secundario:#0097A7;
+    --gris:#757575;
+
+}
+
+html{
+
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    background: rgb(223, 223, 223);
+    font-size: 1rem;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+
+.titulo1{
+    
+    text-align: center;
+    
+}
+
+
+    
+    
+span{
+    font-size: 1rem;
+}
+
+/*Div para el fonde del menu*/
+.nav_bg{
+    
+    background-color: var(--secundario);    
+
+}
+
+
+/*Creamos contendor para centrar los elementos*/
+.contenedor{
+    /*Toma 1200px como maximo si hay espacio disponible, sino toma el 100% disponible por defatul*/
+    max-width: 120rem;    
+    margin:0 auto;   
+    
+}
+
+.Menu_Principal {       
+        
+    display: flex;
+    flex-direction:column;        
+    /*Fondo gris temporal*/
+    background-color: var(--gris);
+
+}
+
+/*Dimensiones para table*/
+@media (min-width:480px){
+    .Menu_Principal{
+        flex-direction: row;
+        justify-content: space-around;      
+               
+        
+    }
+
+   
+}
+
+
+
+
+/*Propiedades del menu principal*/
+.Menu_Principal a{ 
+    display: block;
+    text-align:center;
+    text-decoration: none;      
+    color:white;    
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+   
+        
+}
+
+.Menu_Principal a:hover{
+    background: var(--primario);
+    color:black;
+    transition:0.6s;
+    
+}
+
+.hero{
+    position: relative;
+    background-image: url(../img/hero.jpg);
+    background-repeat:no-repeat;    
+    background-size:cover; /*Ajusta la imagen al temaño del contenedor*/
+    height: 450px;
+    
+    
+
+}
+
+.Contenido-hero{
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;   
+    align-items: center;
+    position: absolute;
+    background-color: rgb(0 0 0 /70%);
+    width: 100%;
+    height: 100%;  
+
+}
+
+
+.Contenido-hero h2, p{
+    color:var(--blanco);
+    text-align: center;
+}
+
+.icon_ubicacion{
+    display: flex;
+   
+    
+}
+
+.btn{
+
+   color:var(--blanco);
+   background: var(--secundario);
+   font-size: 1.5rem;
+   padding: 0.5rem 2rem;
+   font-weight: 700;
+   border-radius:0.8rem;
+   text-decoration: none;
+   margin-top: 0.3rem;
+   text-align: center;
+   width: 90%;
+}
+
+@media (min-width:768px)
+{
+    .btn{
+        width: auto;
+    }
+
+    
+
+ 
+}
+
+.btn:hover{
+    background: var(--primario);
+    color:var(--oscuro);
+    transition: 0.6s;
+}
+
+
+
+
+
